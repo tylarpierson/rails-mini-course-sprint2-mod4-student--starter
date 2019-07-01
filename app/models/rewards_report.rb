@@ -8,7 +8,7 @@ class RewardsReport
   end
 
   def total_purchases
-    @rewards.reduce { |total, reward| total + reward.purchase_count }
+    @rewards.reduce(0) { |total, reward| total + reward.purchase_count }
   end
 
   def notify
