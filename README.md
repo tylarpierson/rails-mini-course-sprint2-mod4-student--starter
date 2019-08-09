@@ -1,4 +1,4 @@
-# Rails Mini Course - Sprint 2 - Module 4 - You Do (Starter)
+# Ruby on Rails - Intermediate Ruby on Rails - Testing with RSpec - Project
 
 ## Use describe and context to structure Employee model specs
 
