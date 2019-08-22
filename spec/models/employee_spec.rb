@@ -31,7 +31,15 @@ RSpec.describe Employee, type: :model do
     end
   end
 
-  
+  context "attributes" do
+    it "has expected attributes" do
+     result = Employee.new(first_name: "Tylar", last_name: "Pierson", rewards_balance: 600).attribute_names
+
+      expect(result).to contain_exactly(
+       "id", "first_name", "last_name", "rewards_balance", "created_at", "updated_at"
+      )      
+    end
+  end
 
 
 end
